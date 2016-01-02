@@ -4,6 +4,7 @@
 //
 //  Created by Yaroslav Arsenkin on 30.12.15.
 //  Copyright © 2015 Iaroslav Arsenkin. All rights reserved.
+//  Website: http://arsenkin.com
 //
 
 import UIKit
