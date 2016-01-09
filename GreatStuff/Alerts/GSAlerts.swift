@@ -9,7 +9,7 @@
 
 import UIKit
 
-public class Alerts {
+public class GSAlerts {
     
     public class func errorAlertWithMessage(message: String, title: String = "Error") -> UIAlertController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)

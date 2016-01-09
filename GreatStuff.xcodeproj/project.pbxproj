@@ -21,16 +21,20 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		272CFC591C41974A00B6595A /* NSURL+URLQueryBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 272CFC571C41974A00B6595A /* NSURL+URLQueryBuilder.h */; };
+		272CFC5A1C41974A00B6595A /* NSURL+URLQueryBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 272CFC581C41974A00B6595A /* NSURL+URLQueryBuilder.m */; };
 		27E2B9EF1C344887008A0479 /* GreatStuff.h in Headers */ = {isa = PBXBuildFile; fileRef = 27E2B9EE1C344887008A0479 /* GreatStuff.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		27E2B9F81C346319008A0479 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E2B9F71C346319008A0479 /* Alerts.swift */; };
-		27E2B9FA1C346577008A0479 /* Alerts.swift in Headers */ = {isa = PBXBuildFile; fileRef = 27E2B9F71C346319008A0479 /* Alerts.swift */; };
+		27E2B9F81C346319008A0479 /* GSAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E2B9F71C346319008A0479 /* GSAlerts.swift */; };
+		27E2B9FA1C346577008A0479 /* GSAlerts.swift in Headers */ = {isa = PBXBuildFile; fileRef = 27E2B9F71C346319008A0479 /* GSAlerts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		272CFC571C41974A00B6595A /* NSURL+URLQueryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+URLQueryBuilder.h"; sourceTree = "<group>"; };
+		272CFC581C41974A00B6595A /* NSURL+URLQueryBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+URLQueryBuilder.m"; sourceTree = "<group>"; };
 		27E2B9EB1C344887008A0479 /* GreatStuff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GreatStuff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27E2B9EE1C344887008A0479 /* GreatStuff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GreatStuff.h; sourceTree = "<group>"; };
 		27E2B9F01C344887008A0479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		27E2B9F71C346319008A0479 /* Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Alerts.swift; path = GreatStuff/Alerts/Alerts.swift; sourceTree = "<group>"; };
+		27E2B9F71C346319008A0479 /* GSAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GSAlerts.swift; path = GreatStuff/Alerts/GSAlerts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +48,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		272CFC561C41970C00B6595A /* NSURL */ = {
+			isa = PBXGroup;
+			children = (
+				272CFC571C41974A00B6595A /* NSURL+URLQueryBuilder.h */,
+				272CFC581C41974A00B6595A /* NSURL+URLQueryBuilder.m */,
+			);
+			name = NSURL;
+			sourceTree = "<group>";
+		};
 		27E2B9E11C344886008A0479 = {
 			isa = PBXGroup;
 			children = (
+				272CFC561C41970C00B6595A /* NSURL */,
 				27E2B9F91C34631D008A0479 /* Alerts */,
 				27E2B9ED1C344887008A0479 /* GreatStuff */,
 				27E2B9EC1C344887008A0479 /* Products */,
@@ -73,7 +87,7 @@
 		27E2B9F91C34631D008A0479 /* Alerts */ = {
 			isa = PBXGroup;
 			children = (
-				27E2B9F71C346319008A0479 /* Alerts.swift */,
+				27E2B9F71C346319008A0479 /* GSAlerts.swift */,
 			);
 			name = Alerts;
 			sourceTree = "<group>";
@@ -85,8 +99,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				272CFC591C41974A00B6595A /* NSURL+URLQueryBuilder.h in Headers */,
 				27E2B9EF1C344887008A0479 /* GreatStuff.h in Headers */,
-				27E2B9FA1C346577008A0479 /* Alerts.swift in Headers */,
+				27E2B9FA1C346577008A0479 /* GSAlerts.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,7 +192,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27E2B9F81C346319008A0479 /* Alerts.swift in Sources */,
+				27E2B9F81C346319008A0479 /* GSAlerts.swift in Sources */,
+				272CFC5A1C41974A00B6595A /* NSURL+URLQueryBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +359,7 @@
 				27E2B9F51C344887008A0479 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27E2BA121C347A2C008A0479 /* Build configuration list for PBXAggregateTarget "Build framework" */ = {
 			isa = XCConfigurationList;
@@ -351,6 +368,7 @@
 				27E2BA141C347A2C008A0479 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
