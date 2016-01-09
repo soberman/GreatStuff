@@ -21,7 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		272CFC591C41974A00B6595A /* NSURL+URLQueryBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 272CFC571C41974A00B6595A /* NSURL+URLQueryBuilder.h */; };
+		272CFC591C41974A00B6595A /* NSURL+URLQueryBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 272CFC571C41974A00B6595A /* NSURL+URLQueryBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		272CFC5A1C41974A00B6595A /* NSURL+URLQueryBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 272CFC581C41974A00B6595A /* NSURL+URLQueryBuilder.m */; };
 		27E2B9EF1C344887008A0479 /* GreatStuff.h in Headers */ = {isa = PBXBuildFile; fileRef = 27E2B9EE1C344887008A0479 /* GreatStuff.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27E2B9F81C346319008A0479 /* GSAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E2B9F71C346319008A0479 /* GSAlerts.swift */; };

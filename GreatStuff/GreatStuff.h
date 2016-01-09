@@ -16,5 +16,5 @@ FOUNDATION_EXPORT double GreatStuffVersionNumber;
 FOUNDATION_EXPORT const unsigned char GreatStuffVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <GreatStuff/PublicHeader.h>
-
+#import <GreatStuff/NSURL+URLQueryBuilder.h>
 
