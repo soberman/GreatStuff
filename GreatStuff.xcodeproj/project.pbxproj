@@ -25,20 +25,19 @@
 		272CFC5A1C41974A00B6595A /* NSURL+URLQueryBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 272CFC581C41974A00B6595A /* NSURL+URLQueryBuilder.m */; };
 		272CFC671C419CF100B6595A /* GSPopover.h in Headers */ = {isa = PBXBuildFile; fileRef = 272CFC651C419CF100B6595A /* GSPopover.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		272CFC681C419CF100B6595A /* GSPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = 272CFC661C419CF100B6595A /* GSPopover.m */; };
+		272CFC6A1C419F7C00B6595A /* GSAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272CFC691C419F7C00B6595A /* GSAlerts.swift */; };
 		27E2B9EF1C344887008A0479 /* GreatStuff.h in Headers */ = {isa = PBXBuildFile; fileRef = 27E2B9EE1C344887008A0479 /* GreatStuff.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		27E2B9F81C346319008A0479 /* GSAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E2B9F71C346319008A0479 /* GSAlerts.swift */; };
-		27E2B9FA1C346577008A0479 /* GSAlerts.swift in Headers */ = {isa = PBXBuildFile; fileRef = 27E2B9F71C346319008A0479 /* GSAlerts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		272CFC571C41974A00B6595A /* NSURL+URLQueryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURL+URLQueryBuilder.h"; path = "GreatStuff/NSURL/NSURL+URLQueryBuilder.h"; sourceTree = "<group>"; };
-		272CFC581C41974A00B6595A /* NSURL+URLQueryBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURL+URLQueryBuilder.m"; path = "GreatStuff/NSURL/NSURL+URLQueryBuilder.m"; sourceTree = "<group>"; };
-		272CFC651C419CF100B6595A /* GSPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSPopover.h; sourceTree = "<group>"; };
-		272CFC661C419CF100B6595A /* GSPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSPopover.m; sourceTree = "<group>"; };
+		272CFC571C41974A00B6595A /* NSURL+URLQueryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURL+URLQueryBuilder.h"; path = "GreatStuff/Categories/NSURL/NSURL+URLQueryBuilder.h"; sourceTree = "<group>"; };
+		272CFC581C41974A00B6595A /* NSURL+URLQueryBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURL+URLQueryBuilder.m"; path = "GreatStuff/Categories/NSURL/NSURL+URLQueryBuilder.m"; sourceTree = "<group>"; };
+		272CFC651C419CF100B6595A /* GSPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSPopover.h; path = GreatStuff/Classes/Popover/GSPopover.h; sourceTree = "<group>"; };
+		272CFC661C419CF100B6595A /* GSPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSPopover.m; path = GreatStuff/Classes/Popover/GSPopover.m; sourceTree = "<group>"; };
+		272CFC691C419F7C00B6595A /* GSAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GSAlerts.swift; path = GreatStuff/Classes/Alerts/GSAlerts.swift; sourceTree = "<group>"; };
 		27E2B9EB1C344887008A0479 /* GreatStuff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GreatStuff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27E2B9EE1C344887008A0479 /* GreatStuff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GreatStuff.h; sourceTree = "<group>"; };
 		27E2B9F01C344887008A0479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		27E2B9F71C346319008A0479 /* GSAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GSAlerts.swift; path = GreatStuff/Alerts/GSAlerts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +116,7 @@
 		27E2B9F91C34631D008A0479 /* Alerts */ = {
 			isa = PBXGroup;
 			children = (
-				27E2B9F71C346319008A0479 /* GSAlerts.swift */,
+				272CFC691C419F7C00B6595A /* GSAlerts.swift */,
 			);
 			name = Alerts;
 			sourceTree = "<group>";
@@ -131,7 +130,6 @@
 			files = (
 				272CFC591C41974A00B6595A /* NSURL+URLQueryBuilder.h in Headers */,
 				27E2B9EF1C344887008A0479 /* GreatStuff.h in Headers */,
-				27E2B9FA1C346577008A0479 /* GSAlerts.swift in Headers */,
 				272CFC671C419CF100B6595A /* GSPopover.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,8 +222,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				272CFC681C419CF100B6595A /* GSPopover.m in Sources */,
-				27E2B9F81C346319008A0479 /* GSAlerts.swift in Sources */,
 				272CFC5A1C41974A00B6595A /* NSURL+URLQueryBuilder.m in Sources */,
+				272CFC6A1C419F7C00B6595A /* GSAlerts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
