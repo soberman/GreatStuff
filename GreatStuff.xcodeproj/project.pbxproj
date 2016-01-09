@@ -23,6 +23,8 @@
 /* Begin PBXBuildFile section */
 		272CFC591C41974A00B6595A /* NSURL+URLQueryBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 272CFC571C41974A00B6595A /* NSURL+URLQueryBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		272CFC5A1C41974A00B6595A /* NSURL+URLQueryBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 272CFC581C41974A00B6595A /* NSURL+URLQueryBuilder.m */; };
+		272CFC671C419CF100B6595A /* GSPopover.h in Headers */ = {isa = PBXBuildFile; fileRef = 272CFC651C419CF100B6595A /* GSPopover.h */; };
+		272CFC681C419CF100B6595A /* GSPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = 272CFC661C419CF100B6595A /* GSPopover.m */; };
 		27E2B9EF1C344887008A0479 /* GreatStuff.h in Headers */ = {isa = PBXBuildFile; fileRef = 27E2B9EE1C344887008A0479 /* GreatStuff.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27E2B9F81C346319008A0479 /* GSAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E2B9F71C346319008A0479 /* GSAlerts.swift */; };
 		27E2B9FA1C346577008A0479 /* GSAlerts.swift in Headers */ = {isa = PBXBuildFile; fileRef = 27E2B9F71C346319008A0479 /* GSAlerts.swift */; };
@@ -31,6 +33,8 @@
 /* Begin PBXFileReference section */
 		272CFC571C41974A00B6595A /* NSURL+URLQueryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURL+URLQueryBuilder.h"; path = "GreatStuff/NSURL/NSURL+URLQueryBuilder.h"; sourceTree = "<group>"; };
 		272CFC581C41974A00B6595A /* NSURL+URLQueryBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURL+URLQueryBuilder.m"; path = "GreatStuff/NSURL/NSURL+URLQueryBuilder.m"; sourceTree = "<group>"; };
+		272CFC651C419CF100B6595A /* GSPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSPopover.h; sourceTree = "<group>"; };
+		272CFC661C419CF100B6595A /* GSPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSPopover.m; sourceTree = "<group>"; };
 		27E2B9EB1C344887008A0479 /* GreatStuff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GreatStuff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27E2B9EE1C344887008A0479 /* GreatStuff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GreatStuff.h; sourceTree = "<group>"; };
 		27E2B9F01C344887008A0479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,11 +61,37 @@
 			name = NSURL;
 			sourceTree = "<group>";
 		};
-		27E2B9E11C344886008A0479 = {
+		272CFC611C419C7C00B6595A /* Categories */ = {
 			isa = PBXGroup;
 			children = (
 				272CFC561C41970C00B6595A /* NSURL */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		272CFC621C419C8400B6595A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				272CFC641C419CE100B6595A /* Popover */,
 				27E2B9F91C34631D008A0479 /* Alerts */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		272CFC641C419CE100B6595A /* Popover */ = {
+			isa = PBXGroup;
+			children = (
+				272CFC651C419CF100B6595A /* GSPopover.h */,
+				272CFC661C419CF100B6595A /* GSPopover.m */,
+			);
+			name = Popover;
+			sourceTree = "<group>";
+		};
+		27E2B9E11C344886008A0479 = {
+			isa = PBXGroup;
+			children = (
+				272CFC611C419C7C00B6595A /* Categories */,
+				272CFC621C419C8400B6595A /* Classes */,
 				27E2B9ED1C344887008A0479 /* GreatStuff */,
 				27E2B9EC1C344887008A0479 /* Products */,
 			);
@@ -102,6 +132,7 @@
 				272CFC591C41974A00B6595A /* NSURL+URLQueryBuilder.h in Headers */,
 				27E2B9EF1C344887008A0479 /* GreatStuff.h in Headers */,
 				27E2B9FA1C346577008A0479 /* GSAlerts.swift in Headers */,
+				272CFC671C419CF100B6595A /* GSPopover.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				272CFC681C419CF100B6595A /* GSPopover.m in Sources */,
 				27E2B9F81C346319008A0479 /* GSAlerts.swift in Sources */,
 				272CFC5A1C41974A00B6595A /* NSURL+URLQueryBuilder.m in Sources */,
 			);
