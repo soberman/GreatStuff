@@ -26,6 +26,7 @@
 		272CFC671C419CF100B6595A /* GSPopover.h in Headers */ = {isa = PBXBuildFile; fileRef = 272CFC651C419CF100B6595A /* GSPopover.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		272CFC681C419CF100B6595A /* GSPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = 272CFC661C419CF100B6595A /* GSPopover.m */; };
 		272CFC6A1C419F7C00B6595A /* GSAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272CFC691C419F7C00B6595A /* GSAlerts.swift */; };
+		2790CE291C451EA400101AAD /* String+GreatStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2790CE281C451EA400101AAD /* String+GreatStuff.swift */; };
 		27E2B9EF1C344887008A0479 /* GreatStuff.h in Headers */ = {isa = PBXBuildFile; fileRef = 27E2B9EE1C344887008A0479 /* GreatStuff.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		272CFC651C419CF100B6595A /* GSPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSPopover.h; path = GreatStuff/Classes/Popover/GSPopover.h; sourceTree = "<group>"; };
 		272CFC661C419CF100B6595A /* GSPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSPopover.m; path = GreatStuff/Classes/Popover/GSPopover.m; sourceTree = "<group>"; };
 		272CFC691C419F7C00B6595A /* GSAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GSAlerts.swift; path = GreatStuff/Classes/Alerts/GSAlerts.swift; sourceTree = "<group>"; };
+		2790CE281C451EA400101AAD /* String+GreatStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+GreatStuff.swift"; path = "GreatStuff/Extensions/String+GreatStuff.swift"; sourceTree = "<group>"; };
 		27E2B9EB1C344887008A0479 /* GreatStuff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GreatStuff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27E2B9EE1C344887008A0479 /* GreatStuff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GreatStuff.h; sourceTree = "<group>"; };
 		27E2B9F01C344887008A0479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,9 +88,18 @@
 			name = Popover;
 			sourceTree = "<group>";
 		};
+		2790CE271C451E7700101AAD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2790CE281C451EA400101AAD /* String+GreatStuff.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		27E2B9E11C344886008A0479 = {
 			isa = PBXGroup;
 			children = (
+				2790CE271C451E7700101AAD /* Extensions */,
 				272CFC611C419C7C00B6595A /* Categories */,
 				272CFC621C419C8400B6595A /* Classes */,
 				27E2B9ED1C344887008A0479 /* GreatStuff */,
@@ -224,6 +235,7 @@
 				272CFC681C419CF100B6595A /* GSPopover.m in Sources */,
 				272CFC5A1C41974A00B6595A /* NSURL+URLQueryBuilder.m in Sources */,
 				272CFC6A1C419F7C00B6595A /* GSAlerts.swift in Sources */,
+				2790CE291C451EA400101AAD /* String+GreatStuff.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,7 +347,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.arsenkin.GreatStuff;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Debug;
 		};
@@ -354,6 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.arsenkin.GreatStuff;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
