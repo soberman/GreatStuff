@@ -26,6 +26,7 @@
 		272CFC671C419CF100B6595A /* GSPopover.h in Headers */ = {isa = PBXBuildFile; fileRef = 272CFC651C419CF100B6595A /* GSPopover.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		272CFC681C419CF100B6595A /* GSPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = 272CFC661C419CF100B6595A /* GSPopover.m */; };
 		272CFC6A1C419F7C00B6595A /* GSAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272CFC691C419F7C00B6595A /* GSAlerts.swift */; };
+		276BDDBE1C484CFD00375161 /* NSHashTable+GreatStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276BDDBD1C484CFD00375161 /* NSHashTable+GreatStuff.swift */; };
 		2790CE291C451EA400101AAD /* String+GreatStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2790CE281C451EA400101AAD /* String+GreatStuff.swift */; };
 		27E2B9EF1C344887008A0479 /* GreatStuff.h in Headers */ = {isa = PBXBuildFile; fileRef = 27E2B9EE1C344887008A0479 /* GreatStuff.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -36,6 +37,7 @@
 		272CFC651C419CF100B6595A /* GSPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSPopover.h; path = GreatStuff/Classes/Popover/GSPopover.h; sourceTree = "<group>"; };
 		272CFC661C419CF100B6595A /* GSPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSPopover.m; path = GreatStuff/Classes/Popover/GSPopover.m; sourceTree = "<group>"; };
 		272CFC691C419F7C00B6595A /* GSAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GSAlerts.swift; path = GreatStuff/Classes/Alerts/GSAlerts.swift; sourceTree = "<group>"; };
+		276BDDBD1C484CFD00375161 /* NSHashTable+GreatStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSHashTable+GreatStuff.swift"; path = "GreatStuff/Extensions/NSHashTable+GreatStuff.swift"; sourceTree = "<group>"; };
 		2790CE281C451EA400101AAD /* String+GreatStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+GreatStuff.swift"; path = "GreatStuff/Extensions/String+GreatStuff.swift"; sourceTree = "<group>"; };
 		27E2B9EB1C344887008A0479 /* GreatStuff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GreatStuff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27E2B9EE1C344887008A0479 /* GreatStuff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GreatStuff.h; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				2790CE281C451EA400101AAD /* String+GreatStuff.swift */,
+				276BDDBD1C484CFD00375161 /* NSHashTable+GreatStuff.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				272CFC681C419CF100B6595A /* GSPopover.m in Sources */,
+				276BDDBE1C484CFD00375161 /* NSHashTable+GreatStuff.swift in Sources */,
 				272CFC5A1C41974A00B6595A /* NSURL+URLQueryBuilder.m in Sources */,
 				272CFC6A1C419F7C00B6595A /* GSAlerts.swift in Sources */,
 				2790CE291C451EA400101AAD /* String+GreatStuff.swift in Sources */,
