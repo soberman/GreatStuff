@@ -12,6 +12,22 @@
 @interface NSURL (URLQueryBuilder)
 NS_ASSUME_NONNULL_BEGIN
 
+#pragma mark -
+#pragma mark Building regular request path
+
+/*!
+ Builds the URL path from incoming array of objects.
+ 
+ @params baseURL BaseURL, that is going to be used to initialize NSURL object.
+ @params objects Array of objects, using which the url is going to be generated.
+ 
+ @return NSURL Complete request URL ready for use.
+ */
++ (nullable NSURL *)gs_pathWithBaseURL:(NSString *)baseURL objects:(NSArray<NSString *> *)objects;
+
+#pragma mark -
+#pragma mark Building GET request path
+
 /*!
  Builds the request URL from incoming base URL and queries.
  

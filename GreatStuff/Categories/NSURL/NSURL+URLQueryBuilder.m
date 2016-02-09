@@ -11,6 +11,22 @@
 
 @implementation NSURL (URLQueryBuilder)
 
+#pragma mark -
+#pragma mark Building regular request path
+
++ (NSURL *)gs_pathWithBaseURL:(NSString *)baseURL objects:(NSArray<NSString *> *)objects {
+    NSURL *URL = [NSURL URLWithString:baseURL];
+    for (NSString *object in objects) {
+        NSString *pathObject = [object stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLPathAllowedCharacterSet]];
+        URL = [URL URLByAppendingPathComponent:pathObject];
+    }
+    
+    return URL;
+}
+
+#pragma mark -
+#pragma mark Building GET request path
+
 + (NSURL *)gs_queryWithString:(NSString *)URL queryElements:(NSDictionary<NSString *,NSString *> *)queryElements {
     return [self gs_queryWithString:URL queryElements:queryElements resolveAgainstBaseURL:NO URLComponent:nil];
 }
@@ -45,8 +61,12 @@
 
 + (NSURL *)gs_queryWithURL:(NSURL *)URL queryElements:(NSDictionary<NSString *, NSString *> *)queryElements resolveAgainstBaseURL:(BOOL)resolve URLComponent:(NSURLComponents * _Nullable * _Nullable)URLComponent {
     NSMutableArray<NSURLQueryItem *> *mQueryItems = [NSMutableArray array];
+    NSCharacterSet *allowedCharacters = [NSCharacterSet URLQueryAllowedCharacterSet];
     for (NSString *key in queryElements) {
-        NSURLQueryItem *queryItem = [NSURLQueryItem queryItemWithName:key value:queryElements[key]];
+        NSString* queryKey = [key stringByAddingPercentEncodingWithAllowedCharacters:allowedCharacters];
+        NSString *value = [queryElements[key] stringByAddingPercentEncodingWithAllowedCharacters:allowedCharacters];
+        
+        NSURLQueryItem *queryItem = [NSURLQueryItem queryItemWithName:queryKey value:value];
         [mQueryItems addObject:queryItem];
     }
     
