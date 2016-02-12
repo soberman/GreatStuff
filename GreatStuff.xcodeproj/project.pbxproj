@@ -28,6 +28,8 @@
 		27454BD11C4C186E00DBB38C /* UIColor+GreatStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27454BD01C4C186E00DBB38C /* UIColor+GreatStuff.swift */; };
 		276BDDBE1C484CFD00375161 /* NSHashTable+GreatStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276BDDBD1C484CFD00375161 /* NSHashTable+GreatStuff.swift */; };
 		2790CE291C451EA400101AAD /* String+GreatStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2790CE281C451EA400101AAD /* String+GreatStuff.swift */; };
+		27CD09A71C6E91240054E4D7 /* GSGCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CD09A61C6E91240054E4D7 /* GSGCD.swift */; };
+		27CD09AA1C6E913B0054E4D7 /* GSLoger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CD09A91C6E913B0054E4D7 /* GSLoger.swift */; };
 		27E2B9EF1C344887008A0479 /* GreatStuff.h in Headers */ = {isa = PBXBuildFile; fileRef = 27E2B9EE1C344887008A0479 /* GreatStuff.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27EEAD951C5FB853002EC867 /* GSAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EEAD941C5FB853002EC867 /* GSAlerts.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +42,8 @@
 		27454BD01C4C186E00DBB38C /* UIColor+GreatStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+GreatStuff.swift"; path = "GreatStuff/Extensions/UIColor+GreatStuff.swift"; sourceTree = "<group>"; };
 		276BDDBD1C484CFD00375161 /* NSHashTable+GreatStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSHashTable+GreatStuff.swift"; path = "GreatStuff/Extensions/NSHashTable+GreatStuff.swift"; sourceTree = "<group>"; };
 		2790CE281C451EA400101AAD /* String+GreatStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+GreatStuff.swift"; path = "GreatStuff/Extensions/String+GreatStuff.swift"; sourceTree = "<group>"; };
+		27CD09A61C6E91240054E4D7 /* GSGCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GSGCD.swift; path = GreatStuff/Structs/GCD/GSGCD.swift; sourceTree = "<group>"; };
+		27CD09A91C6E913B0054E4D7 /* GSLoger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GSLoger.swift; path = GreatStuff/Structs/Loger/GSLoger.swift; sourceTree = "<group>"; };
 		27E2B9EB1C344887008A0479 /* GreatStuff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GreatStuff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27E2B9EE1C344887008A0479 /* GreatStuff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GreatStuff.h; sourceTree = "<group>"; };
 		27E2B9F01C344887008A0479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,6 +105,22 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		27CD09A31C6E90D70054E4D7 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				27CD09A61C6E91240054E4D7 /* GSGCD.swift */,
+			);
+			name = GCD;
+			sourceTree = "<group>";
+		};
+		27CD09A81C6E91280054E4D7 /* Loger */ = {
+			isa = PBXGroup;
+			children = (
+				27CD09A91C6E913B0054E4D7 /* GSLoger.swift */,
+			);
+			name = Loger;
+			sourceTree = "<group>";
+		};
 		27E2B9E11C344886008A0479 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +161,8 @@
 		27EEAD901C5FB7DD002EC867 /* Structs */ = {
 			isa = PBXGroup;
 			children = (
+				27CD09A81C6E91280054E4D7 /* Loger */,
+				27CD09A31C6E90D70054E4D7 /* GCD */,
 				27E2B9F91C34631D008A0479 /* Alerts */,
 			);
 			name = Structs;
@@ -249,6 +271,8 @@
 				272CFC681C419CF100B6595A /* GSPopover.m in Sources */,
 				276BDDBE1C484CFD00375161 /* NSHashTable+GreatStuff.swift in Sources */,
 				27EEAD951C5FB853002EC867 /* GSAlerts.swift in Sources */,
+				27CD09AA1C6E913B0054E4D7 /* GSLoger.swift in Sources */,
+				27CD09A71C6E91240054E4D7 /* GSGCD.swift in Sources */,
 				272CFC5A1C41974A00B6595A /* NSURL+URLQueryBuilder.m in Sources */,
 				27454BD11C4C186E00DBB38C /* UIColor+GreatStuff.swift in Sources */,
 				2790CE291C451EA400101AAD /* String+GreatStuff.swift in Sources */,
