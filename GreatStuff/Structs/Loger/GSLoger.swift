@@ -10,6 +10,14 @@ import Foundation
 
 public struct GSLoger {
     
+    /**
+        Formatting style of the log output. Default:
+        
+            "\n- __LINE__, `__METHOD__` in __FILE__:"
+     
+        - Note: You should use \_\_LINE\_\_ or any other formating placeholder exactly like in example.
+     
+     */
     public static var formattingStyle: String = "\n- __LINE__, `__METHOD__` in __FILE__:"
     
     public static func log(string: String, file: NSString = __FILE__, method: String = __FUNCTION__, line: Int = __LINE__) {
