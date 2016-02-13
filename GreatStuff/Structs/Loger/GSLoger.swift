@@ -11,9 +11,9 @@ import Foundation
 /**
 Formatting style of the log output. Default:
 
-"\n- __LINE__, `__METHOD__` in __FILE__:"
+"\n- `__LINE__`, `__METHOD__` in `__FILE__`:"
 
-- Note: You should use \_\_LINE\_\_ or any other formating placeholder exactly like in example.
+- Note: You should use `__LINE__` or any other formating placeholder exactly like in example.
 
 */
 public var GSLogFormattingStyle: String = "\n- __LINE__, `__METHOD__` in __FILE__:"
