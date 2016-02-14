@@ -9,20 +9,28 @@
 import Foundation
 
 /**
-Formatting style of the log output. Default:
+    Formatting style of the log output. Default:
 
-"\n- `__LINE__`, `__METHOD__` in `__FILE__`:"
+    "\n- `__LINE__`, `__METHOD__` in `__FILE__`:"
 
-- Note: You should use `__LINE__` or any other formating placeholder exactly like in example.
-
+    - Note: You should use `__LINE__` or any other formating placeholder exactly like in example.
 */
 public var GSLogFormattingStyle: String = "\n- __LINE__, `__METHOD__` in __FILE__:"
+
+/**
+    Turns off all loggin.
+
+    Set this property to **_true_** in case you make a Release build.
+*/
+public var GSLogDisableLogging = false
 
 public func GSLog(string: String, file: NSString = __FILE__, method: String = __FUNCTION__, line: Int = __LINE__) {
     GSLog(string, args: [], file: file, method: method, line: line)
 }
 
 public func GSLog(string: String, args: [CVarArgType], file: NSString = __FILE__, method: String = __FUNCTION__, line: Int = __LINE__) {
+    if GSLogDisableLogging { return }
+    
     let log = String(format: string, arguments: args)
     let format = gs_generateFormatString(file, method: method, line: line) + "\n   \(log)"
     
