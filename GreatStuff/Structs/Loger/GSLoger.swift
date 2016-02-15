@@ -24,15 +24,20 @@ public var GSLogFormattingStyle: String = "\n- __LINE__, `__METHOD__` in __FILE_
 */
 public var GSLogDisableLogging = false
 
-public func GSLog(string: String, file: NSString = __FILE__, method: String = __FUNCTION__, line: Int = __LINE__) {
-    GSLog(string, args: [], file: file, method: method, line: line)
+public func GSLog(items: Any..., file: NSString = __FILE__, method: String = __FUNCTION__, line: Int = __LINE__) {
+    if GSLogDisableLogging { return }
+    
+    let format = gs_generateFormatString(file, method: method, line: line)
+    
+    print(format)
+    print(items.minimalDescrption + "\n")
 }
 
 public func GSLog(string: String, args: [CVarArgType], file: NSString = __FILE__, method: String = __FUNCTION__, line: Int = __LINE__) {
     if GSLogDisableLogging { return }
     
     let log = String(format: string, arguments: args)
-    let format = gs_generateFormatString(file, method: method, line: line) + "\n   \(log)"
+    let format = gs_generateFormatString(file, method: method, line: line) + "\n\(log)\n"
     
     print(format)
 }
@@ -49,4 +54,10 @@ private func gs_generateFormatString(file: NSString = __FILE__, method: String =
     let formatWithFile = formatWithMethod.stringByReplacingOccurrencesOfString("__FILE__", withString: fileTruncated)
     
     return formatWithFile
+}
+
+private extension SequenceType {
+    var minimalDescrption: String {
+        return map { String($0) }.joinWithSeparator(" ")
+    }
 }
